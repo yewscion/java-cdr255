@@ -32,7 +32,6 @@ EXTRA_DIST =  Changelog.md \
               COPYING \
               m4/tar-edited.m4 \
               guix.scm \
-              pre-inst-env.in \
               doc/version.texi.in \
               doc/fdl-1.3.texi \
               doc/procedure-types.texi
@@ -41,7 +40,7 @@ EXTRA_DIST =  Changelog.md \
 
 ### Filelist for make clean
 CLEANFILES =					\
-  $(JAVACLASSES)				\
+  $(JAVACLASSES)				
 ################################################################################
 
 # Define Inputs
@@ -74,7 +73,7 @@ EXTRA_DIST += $(JAVASOURCES)
 
 # Added Jobs
 
-java-cdr255.jar: $(MYJAVAPKGDIR)/io/Input.class
+cdr255.jar: $(MYJAVAPKGDIR)/io/Input.class
 	$(JAR) cfe cdr255.jar $(MYJAVAPKG).io.Input \
 	-C $(MYJAVADIR) $(MYJAVAPKG)/io/Input.class
 

@@ -49,6 +49,5 @@ dnl Finishing Up
 AC_PROG_LN_S
 AC_PROG_MKDIR_P
 AC_CONFIG_FILES([Makefile])
-AC_CONFIG_FILES([pre-inst-env], [chmod +x pre-inst-env])
 AC_CONFIG_FILES([doc/version.texi])
 AC_OUTPUT
